@@ -1,3 +1,4 @@
+/* For the navigational bar */
 .navbar {
     background-color: dodgerblue;
     padding: 0.5rem 1rem;
@@ -25,3 +26,8 @@
     text-decoration: underline;
 }
 
+
+/* To align text to the center */
+.center {
+	text-align: center;
+}
