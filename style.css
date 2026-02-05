@@ -3,7 +3,7 @@
     background-color: #1a1b26;
     padding: 0.3rem 0.7rem;
     margin: 5px 0px;
-    border-radius: 6px;
+    border-radius: 20px;
     min-width: 0;
     transition: background-color 0.2s ease-in=out, color 0.2s ease-in-out;
     font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
@@ -11,8 +11,8 @@
 
 .navbar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin:  0;
+    padding: 0.3rem 0.7rem;
     display: flex;
     gap: 1rem;
 }
@@ -30,8 +30,12 @@
 .navbar a:hover {
     text-decoration: underline;
     background-color: rgb(41, 42, 53);
+    background: transparent;
 }
 
+/* Background colors for the website */
+
+body {background-color: #f7ffff;} 
 
 /* To align text to the center */
 .center {
@@ -42,4 +46,17 @@
 
 .text {
       font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
+}
+
+/* For images */
+
+.image {
+       border-radius: 20px;
+}
+
+/* Specifically for certain images (Those with a white background)*/
+
+.simage {
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(153, 209, 219, 0.2)
 }
