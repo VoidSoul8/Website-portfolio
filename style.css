@@ -1,7 +1,12 @@
 /* For the navigational bar */
 .navbar {
-    background-color: dodgerblue;
-    padding: 0.5rem 1rem;
+    background-color: #1a1b26;
+    padding: 0.3rem 0.7rem;
+    margin: 5px 0px;
+    border-radius: 6px;
+    min-width: 0;
+    transition: background-color 0.2s ease-in=out, color 0.2s ease-in-out;
+    font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
 }
 
 .navbar ul {
@@ -17,17 +22,24 @@
 }
 
 .navbar a {
-    color: white;
+    color: #c6d0f5;
     text-decoration: none;
     font-weight: bold;
 }
 
 .navbar a:hover {
     text-decoration: underline;
+    background-color: rgb(41, 42, 53);
 }
 
 
 /* To align text to the center */
 .center {
 	text-align: center;
+}
+
+/* For text rendering */
+
+.text {
+      font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
 }
