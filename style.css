@@ -65,8 +65,8 @@ body {background-color: #f7ffff;}
 /* Scrollbar implementation (Not currently in use) */
 
  .scroll-box {
-            width: 300px;
-            height: 150px;
+            width: 600px;
+            height: 300px;
             overflow: scroll;
             border: 1px solid #ccc;
 	    border-radius: 20px;
