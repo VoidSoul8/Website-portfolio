@@ -63,24 +63,12 @@ body {background-color: #f7ffff;}
 }
 
 /* Scrollbar implementation (Not currently in use) */
-.scroll {
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+ .scroll-box {
+            width: 300px;
+            height: 150px;
+            overflow: scroll;
+            border: 1px solid #ccc;
+	    border-radius: 20px;
+            padding: 10px;
 }
