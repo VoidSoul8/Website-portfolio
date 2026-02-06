@@ -7,6 +7,7 @@
     min-width: 0;
     transition: background-color 0.2s ease-in=out, color 0.2s ease-in-out;
     font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
+    font-weight: 500;
 }
 
 .navbar ul {
@@ -59,4 +60,27 @@ body {background-color: #f7ffff;}
 .simage {
 	border-radius: 20px;
 	box-shadow: 0 1px 3px rgba(153, 209, 219, 0.2)
+}
+
+/* Scrollbar implementation (Not currently in use) */
+.scroll {
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 }
