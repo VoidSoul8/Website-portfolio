@@ -36,7 +36,10 @@
 
 /* Background colors for the website */
 
-body {background-color: #f7ffff;} 
+.back {
+	background:  #CCFFFF;
+background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
 
 /* To align text to the center */
 .center {
@@ -101,3 +104,4 @@ body {background-color: #f7ffff;}
   min-width: 0;
   color: #c6d0f5;
 }
+
