@@ -65,10 +65,36 @@ body {background-color: #f7ffff;}
 /* Scrollbar implementation */
 
  .scroll-box {
-            width: 600px;
-            height: 300px;
+            width: 700px;
+            height: 700px;
             overflow: scroll;
             border: 1px solid #ccc;
 	    border-radius: 20px;
             padding: 10px;
+}
+
+/* For circles */
+.dot {
+ 
+  height: 100px;
+  width: 100px;
+  background-color: #1a1b26;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Align other things than text to the center */
+.shape-center {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For text-boxes */
+.box {
+  width: 290px;
+  height 80px;
+  border-radius: 20px;
+  background-color: #1a1b26;
+  color: #c6d0f5;
 }
