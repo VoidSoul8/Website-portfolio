@@ -96,5 +96,8 @@ body {background-color: #f7ffff;}
   height 80px;
   border-radius: 20px;
   background-color: #1a1b26;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  min-width: 0;
   color: #c6d0f5;
 }
