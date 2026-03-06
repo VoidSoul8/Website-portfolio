@@ -105,3 +105,10 @@ background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 25
   color: #c6d0f5;
 }
 
+/* For code blocks */
+.code {
+  background: #eeeeee;
+  color: #19191a;
+  padding: 0px 2px 0px;
+  border-radius: 2px;
+}
