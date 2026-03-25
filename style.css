@@ -112,3 +112,25 @@ background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 25
   padding: 0px 2px 0px;
   border-radius: 2px;
 }
+
+/* For Image displaying */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 20px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item p {
+  margin-top: 8px;
+  font-size: 14px;
+}
