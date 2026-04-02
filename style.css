@@ -65,7 +65,7 @@ background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 25
 	box-shadow: 0 4px 6px rgba(153, 209, 219, 0.2)
 }
 
-/* Scrollbar implementation */
+/* Scrollbar implementation for the website*/
 
  .scroll-box {
             width: 700px;
@@ -74,16 +74,6 @@ background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 25
             border: 1px solid #ccc;
 	    border-radius: 20px;
             padding: 10px;
-}
-
-/* For circles */
-.dot {
-
-  height: 100px;
-  width: 100px;
-  background-color: #1a1b26;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 /* Align other things than text to the center */
@@ -103,14 +93,6 @@ background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 25
   margin: 5px 0px;
   min-width: 0;
   color: #c6d0f5;
-}
-
-/* For code blocks */
-.code {
-  background: #eeeeee;
-  color: #19191a;
-  padding: 0px 2px 0px;
-  border-radius: 2px;
 }
 
 /* For Image displaying */
