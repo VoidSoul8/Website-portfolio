@@ -1,29 +1,61 @@
-<html>
-	<body class="back">
-		<title>555 Timer </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>555 Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="PixelKit_Shape-193-copy_37747.ico">
+</head>
+<body class="back">
 
-		<link rel="stylesheet" href=style.css">
-		<link rel="icon" type="image/x-icon" href="PixelKit_Shape-193-copy_37747.ico">
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project1.html">Icebreaker</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="project2.html">Dissection</a></li>
+        <li><a href="github.html">Source Code</a></li>
+        <li class="nav-more-li">
+            <details>
+                <summary class="nav-more-summary">More ▾</summary>
+                <ul class="nav-dropdown">
+                    <li><a href="linux-unit.html">GNU/Linux Unit</a></li>
+                    <li><a href="ohm.html">Ohm's Law</a></li>
+                    <li><a href="breadboard.html">Breadboards</a></li>
+                    <li><a href="design.html">Design Process</a></li>
+                    <li><a href="timer.html">555 Timer</a></li>
+                </ul>
+            </details>
+        </li>
+    </ul>
+</nav>
 
-		<nav clas"navbar">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-			</ul>
-		</nav>
+<div class="container">
 
-		<h1 style="font-size:30px" class="text">
-			555 timer:
-		</h1>
+    <h1 style="font-size:30px" class="text">555 timer:</h1>
 
-		<p class="text">
-		The 555 timer handles logic, timing and other tasks in a circuit. It can operate in two modes, <b>time delay</b>, where timing intervals are set externally, and <b>oscillator mode</b>, where requency and duty cycles are controlled by resistors and a capacitor. 
-		</p>
+    <p class="text">
+        The <b>555 timer</b> handles logic, timing and other tasks in a circuit. It can operate in two
+        modes, <b>time delay</b>, where timing intervals are set externally, and <b>oscillator mode</b>,
+        where frequency and duty cycles are controlled by resistors and a capacitor.
+    </p>
 
-		<br />
-		<br />
-		<img src="timer.png" class="image"/>
-		<p class="text box">
-		Above is a diagram of the 555 timer, with the pin configuration, showing pin 1 is GND (Ground), pin 2 is TRIGGER (Starts timing when there is a voltage drop, pin 3 is OUTPUT (The main output pin), pin 4 is RESET (Forced a low output mode when active), pin 5 is CONTROL VOLTAGE (Adjusts the threshold reference), pin 6 is THRESHOLD (Which seneses the capacitor voltage), pin 7 is DISCHARGE (Discharges the timing capacitor), and pin 8 is VCC (Which supplies voltage)
-		</p>
+    <img src="timer.png" class="image"/>
+    <p class="text box">
+        Above is a diagram of the 555 timer, with the pin configuration, showing
+        pin 1 is <code>GND</code> (Ground),
+        pin 2 is <code>TRIGGER</code> (Starts timing when there is a voltage drop),
+        pin 3 is <code>OUTPUT</code> (The main output pin),
+        pin 4 is <code>RESET</code> (Forced a low output mode when active),
+        pin 5 is <code>CONTROL VOLTAGE</code> (Adjusts the threshold reference),
+        pin 6 is <code>THRESHOLD</code> (Which senses the capacitor voltage),
+        pin 7 is <code>DISCHARGE</code> (Discharges the timing capacitor),
+        and pin 8 is <code>VCC</code> (Which supplies voltage)
+    </p>
 
+</div>
+
+</body>
 </html>

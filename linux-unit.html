@@ -1,45 +1,73 @@
-<html>
-	<body class="back">
-		<title>GNU/Linux Unit </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNU/Linux Unit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="PixelKit_Shape-193-copy_37747.ico">
+</head>
+<body class="back">
 
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" type="image/x-icon" href="PixelKit_Shape-193-copy_37747.ico">
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project1.html">Icebreaker</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="project2.html">Dissection</a></li>
+        <li><a href="github.html">Source Code</a></li>
+        <li class="nav-more-li">
+            <details>
+                <summary class="nav-more-summary">More ▾</summary>
+                <ul class="nav-dropdown">
+                    <li><a href="linux-unit.html">GNU/Linux Unit</a></li>
+                    <li><a href="ohm.html">Ohm's Law</a></li>
+                    <li><a href="breadboard.html">Breadboards</a></li>
+                    <li><a href="design.html">Design Process</a></li>
+                    <li><a href="timer.html">555 Timer</a></li>
+                </ul>
+            </details>
+        </li>
+    </ul>
+</nav>
 
-		<nav class="navbar">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-			</ul>
-		</nav>
+<div class="container">
 
-		<h1 style="font-size:30px" class="text">
-			GNU/Linux Unit:
-		</h1>
+    <h1 style="font-size:30px" class="text">GNU/Linux Unit:</h1>
 
-		<p class="text">
-		GNU/Linux differences from Windows as Linux by itself is only the kernel, and requires the GNU coreutilities to classify itself as an Operating System. Likewise, GNU/Linux is published under the GNU General Public License as Open Source Software to allow anyone to edit, modify, or redistribute as long as their changes are made public, while Windows is proprietary software and is closed sourced. 
-		<br />
-		<br />
-	Virtualbox is a hypervisor that uses Intel's VT-x and AMD's AMD-V hardware-assisted technologies to natively run guest operating systems. The reason we ran Linux inside of Virtualbox instead of installing it directly is because it would've been time consuming to properly setup a dual boot, not to mention how Windows frequently nukes the EFI partition for Linux during updates, and that it is much easier to deploy to a Virtual Machine and remove the VM then it is on physical hardware.
-		<br />
-		<br />
-		There was nothing that really surprised me about GNU/Linux. As someone who has done projects such as LFS (Linux From Scratch) and BLFS (Beyond Linux From Scratch), I am familiar with how Linux operates and what utilities are needed for Linux to function. There was nothing confusing or difficult either. It was all straightforward in my opinion.
+    <p class="text">
+        <b>GNU/Linux</b> differences from <b>Windows</b> as Linux by itself is only the kernel, and requires the
+        GNU coreutilities to classify itself as an Operating System. Likewise, <b>GNU/Linux</b> is published
+        under the GNU General Public License as Open Source Software to allow anyone to edit, modify, or
+        redistribute as long as their changes are made public, while <b>Windows</b> is proprietary software
+        and is closed sourced.
+        <br /><br />
+        <b>VirtualBox</b> is a hypervisor that uses Intel's <code>VT-x</code> and AMD's <code>AMD-V</code>
+        hardware-assisted technologies to natively run guest operating systems. The reason we ran Linux inside
+        of <b>VirtualBox</b> instead of installing it directly is because it would've been time consuming to
+        properly setup a dual boot, not to mention how <b>Windows</b> frequently nukes the <code>EFI</code>
+        partition for Linux during updates, and that it is much easier to deploy to a Virtual Machine and
+        remove the VM then it is on physical hardware.
+        <br /><br />
+        There was nothing that really surprised me about <b>GNU/Linux</b>. As someone who has done projects
+        such as <b>LFS</b> (Linux From Scratch) and <b>BLFS</b> (Beyond Linux From Scratch), I am familiar
+        with how Linux operates and what utilities are needed for Linux to function. There was nothing
+        confusing or difficult either. It was all straightforward in my opinion.
+    </p>
 
+    <br />
 
-		</p>
+    <img src="website.png" class="image"/>
+    <p class="text box">An image of <b>nginx</b> running and hosting a website</p>
 
-		<br />
-		<br />
+    <br />
 
-		<img src="website.png" class="image"/>
-		<p class="text">
-		An image of nginx running and hosting a website
+    <img src="librewolf.png" class="image"/>
+    <p class="text box"><b>Librewolf</b>, a privacy focused fork of <b>Firefox</b> running in a
+    <b>Linux Mint</b> VM, freshly installed from the <code>apt</code> package manager</p>
 
-		<br />
-		<br />
-		
-		<img src="librewolf.png" class="image"/>
-		<p class="text">
-		Librewolf, a privacy focused fork of Firefox runing in a Linux Mint VM, freshly installed from the apt package manager
-		</p>
+</div>
+
+</body>
 </html>
-
