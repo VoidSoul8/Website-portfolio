@@ -1,21 +1,28 @@
-/* For the navigational bar */
+/* ===== RESET & BOX MODEL ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ===== NAVIGATION BAR ===== */
 .navbar {
     background-color: #1a1b26;
     padding: 0.3rem 0.7rem;
     margin: 5px 0px;
     border-radius: 20px;
     min-width: 0;
-    transition: background-color 0.2s ease-in=out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
     font-weight: 500;
 }
 
 .navbar ul {
     list-style: none;
-    margin:  0;
+    margin: 0;
     padding: 0.3rem 0.7rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
 }
 
 .navbar li {
@@ -30,89 +37,189 @@
 
 .navbar a:hover {
     text-decoration: underline;
-    background-color: rgb(41, 42, 53);
     background: transparent;
 }
 
-/* Background colors for the website */
+/* ===== OVERFLOW / MORE MENU ===== */
+.nav-more-li {
+    position: relative;
+}
 
+/* Reset browser-default <details> styling — this was causing the
+   "black background" bug. Only .nav-dropdown should set the colour. */
+.nav-more-li details {
+    background: transparent;
+    border: none;
+}
+
+.nav-more-summary {
+    color: #c6d0f5;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
+    font-size: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background: transparent;
+}
+
+.nav-more-summary::-webkit-details-marker,
+.nav-more-summary::marker {
+    display: none;
+    content: "";
+}
+
+.nav-more-summary:hover {
+    text-decoration: underline;
+}
+
+.nav-dropdown {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: 0;
+    /* Exactly the same hex as .navbar */
+    background-color: #1a1b26;
+    border-radius: 14px;
+    padding: 0.5rem 0.4rem;
+    list-style: none;
+    z-index: 100;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    /* Thin accent border instead of shadow so the panel doesn't appear darker */
+    border: 1px solid rgba(198, 208, 245, 0.15);
+}
+
+.nav-dropdown li {
+    margin: 0;
+}
+
+.nav-dropdown a {
+    color: #c6d0f5;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
+    display: block;
+    padding: 0.35rem 0.8rem;
+    border-radius: 8px;
+}
+
+.nav-dropdown a:hover {
+    background-color: rgba(198, 208, 245, 0.08);
+    text-decoration: underline;
+}
+
+/* ===== PAGE CONTENT CONTAINER ===== */
+.container {
+    max-width: 860px;
+    padding: 0.5rem 1.5rem 2.5rem;
+}
+
+/* ===== BACKGROUND ===== */
 .back {
-	background:  #CCFFFF;
-background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: #CCFFFF;
+    background: linear-gradient(270deg, rgba(204, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0.5rem 1rem;
 }
 
-/* To align text to the center */
+/* ===== ALIGNMENT ===== */
 .center {
-	text-align: center;
+    text-align: center;
 }
 
-/* For text rendering */
-
+/* ===== TYPOGRAPHY ===== */
 .text {
-      font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
+    font-family: "SF Pro Text", "Inter", "Segoe UI", "NotoSans Nerd Font", sans-serif;
 }
 
-/* For images */
+/* Inline code style for commands, specs, and technical terms */
+code {
+    font-family: "SF Mono", "Fira Code", "Consolas", "Courier New", monospace;
+    background-color: #1a1b26;
+    color: #a6e3a1;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-size: 0.88em;
+}
 
+/* ===== IMAGES ===== */
 .image {
-       border-radius: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Specifically for certain images (Those with a white background)*/
-
+/* For images with a white background */
 .simage {
-	border-radius: 20px;
-	box-shadow: 0 4px 6px rgba(153, 209, 219, 0.2)
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(153, 209, 219, 0.2);
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* Scrollbar implementation for the website*/
-
- .scroll-box {
-            width: 700px;
-            height: 700px;
-            overflow: scroll;
-            border: 1px solid #ccc;
-	    border-radius: 20px;
-            padding: 10px;
+/* ===== SCROLL BOX ===== */
+.scroll-box {
+    width: 700px;
+    max-width: 100%;
+    height: 700px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
 }
 
-/* Align other things than text to the center */
+/* ===== CENTER NON-TEXT ELEMENTS ===== */
 .shape-center {
-  margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-/* For text-boxes */
+/* ===== IMAGE CAPTIONS / TEXT BOXES ===== */
 .box {
-  width: 290px;
-  height 80px;
-  border-radius: 20px;
-  background-color: #1a1b26;
-  padding: 0.3rem 0.7rem;
-  margin: 5px 0px;
-  min-width: 0;
-  color: #c6d0f5;
+    width: fit-content;
+    max-width: 680px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #1a1b26;
+    padding: 0.4rem 0.9rem;
+    margin: 6px 0;
+    min-width: 0;
+    color: #c6d0f5;
 }
 
-/* For Image displaying */
-
+/* ===== IMAGE GALLERY ===== */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .item {
-  text-align: center;
+    text-align: center;
 }
 
 .item img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .item p {
-  margin-top: 8px;
-  font-size: 14px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Box inside a gallery item stretches full width */
+.item .box {
+    width: 100%;
+    max-width: 100%;
 }
