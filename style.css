@@ -195,6 +195,16 @@ code {
     color: #c6d0f5;
 }
 
+/* Links inside .box inherit the dark background — give them the
+   same green used by <code> so they stay readable */
+.box a {
+    color: #a6e3a1;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
 /* ===== IMAGE GALLERY ===== */
 .gallery {
     display: grid;
